@@ -198,6 +198,14 @@ contract SwiftCryptoConverter {
     ├── contracts/
     ├── README.md
 
+🚀 Cara menjalankan (manual lewat terminal)
+
+    psql -U postgres -d swift_crypto_db -f backend/db/init_db.sql
+
+Pastikan database swift_crypto_db udah dibuat:
+
+    createdb -U postgres swift_crypto_db
+
 
 🤝 Tech & Compliance Partners
 🏦 SWIFT Alliance Gateway
@@ -214,12 +222,66 @@ contract SwiftCryptoConverter {
 
 ## 💡 Rekomendasi Sumber Belajar
 
-| Topik     | Sumber                                                                 |
-|-----------|------------------------------------------------------------------------|
-| Python    | [SoloLearn](https://www.sololearn.com), [freeCodeCamp](https://freecodecamp.org) |
-| ccxt      | [ccxt GitHub](https://github.com/ccxt/ccxt)                           |
-| Solidity  | [CryptoZombies](https://cryptozombies.io), [Solidity by Example](https://solidity-by-example.org) |
-| Web3.py   | [Web3.py Docs](https://web3py.readthedocs.io)                         |
+🧠 1. Backend Development (Node.js + TypeScript + PostgreSQL)
+
+| Topik                       | Sumber Belajar                     | Link                                                                                                                                                                                           |
+| --------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dasar Express.js + REST API | The Net Ninja: Express JS Tutorial | [https://youtube.com/playlist?list=PL4cUxeGkcC9ij8CfkAYndV0hT2fk6PAVT](https://youtube.com/playlist?list=PL4cUxeGkcC9ij8CfkAYndV0hT2fk6PAVT)                                                   |
+| PostgreSQL + Node.js        | DigitalOcean Node.js + PostgreSQL  | [https://www.digitalocean.com/community/tutorials/how-to-use-node-js-with-postgresql-on-ubuntu](https://www.digitalocean.com/community/tutorials/how-to-use-node-js-with-postgresql-on-ubuntu) |
+| TypeScript in Node.js       | TypeScript Handbook                | [https://www.typescriptlang.org/docs/](https://www.typescriptlang.org/docs/)                                                                                                                   |
+| Prisma ORM (Opsional)       | Prisma Docs                        | [https://www.prisma.io/docs](https://www.prisma.io/docs)                                                                                                                                       |
+
+🧱 2. Blockchain & Smart Contract (Solidity + Ethereum)
+
+| Topik                         | Sumber Belajar                          | Link                                                         |
+| ----------------------------- | --------------------------------------- | ------------------------------------------------------------ |
+| Solidity Smart Contracts      | CryptoZombies (Fun!)                    | [https://cryptozombies.io](https://cryptozombies.io)         |
+| Complete DApp + Hardhat       | Patrick Collins (freeCodeCamp Solidity) | [https://youtu.be/gyMwXuJrbJQ](https://youtu.be/gyMwXuJrbJQ) |
+| Web3.js vs Ethers.js          | Ethers.js Docs                          | [https://docs.ethers.org/v5/](https://docs.ethers.org/v5/)   |
+| Remix IDE (Testing Contracts) | Remix Ethereum IDE                      | [https://remix.ethereum.org](https://remix.ethereum.org)     |
+
+💸 3. SWIFT Messaging / ISO 20022
+
+| Topik                      | Sumber Belajar                    | Link                                                                                                                                                           |
+| -------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| MT103 Format & Tag Meaning | SWIFT MT103 Field Guide           | [https://www.sepaforcorporates.com/swift-for-corporates/swift-mt103-explained/](https://www.sepaforcorporates.com/swift-for-corporates/swift-mt103-explained/) |
+| ISO 20022 Introduction     | Swift.com official docs           | [https://www.swift.com/standards/iso-20022](https://www.swift.com/standards/iso-20022)                                                                         |
+| Sample Messages            | SEPAForCorporates Sample Messages | [https://www.sepaforcorporates.com/tag/mt103/](https://www.sepaforcorporates.com/tag/mt103/)                                                                   |
+
+🔐 4. Security, Compliance & KYC
+
+| Topik                   | Sumber Belajar          | Link                                                                                                                                                                               |
+| ----------------------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| OAuth2 & JWT in Node.js | Auth0 Node.js JWT Guide | [https://auth0.com/blog/node-js-and-express-tutorial-building-and-securing-restful-apis/](https://auth0.com/blog/node-js-and-express-tutorial-building-and-securing-restful-apis/) |
+| What is HSM?            | AWS HSM Docs            | [https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html)                                 |
+| AML/KYC Compliance      | Chainalysis Blog        | [https://www.chainalysis.com/blog/](https://www.chainalysis.com/blog/)                                                                                                             |
+
+🎓 5. End-to-End Fullstack DApp
+
+| Topik                      | Sumber Belajar          | Link                                                                                      |
+| -------------------------- | ----------------------- | ----------------------------------------------------------------------------------------- |
+| Docker for Node.js         | Docker Docs             | [https://docs.docker.com/language/nodejs/](https://docs.docker.com/language/nodejs/)      |
+| CI/CD with GitHub Actions  | GitHub Actions Docs     | [https://docs.github.com/en/actions](https://docs.github.com/en/actions)                  |
+| Deploy PostgreSQL on Cloud | Railway.app or Supabase | [https://railway.app](https://railway.app) / [https://supabase.com](https://supabase.com) |
+
+🎯 6. Production, DevOps & Deployment
+
+| Topik                      | Sumber Belajar          | Link                                                                                      |
+| -------------------------- | ----------------------- | ----------------------------------------------------------------------------------------- |
+| Docker for Node.js         | Docker Docs             | [https://docs.docker.com/language/nodejs/](https://docs.docker.com/language/nodejs/)      |
+| CI/CD with GitHub Actions  | GitHub Actions Docs     | [https://docs.github.com/en/actions](https://docs.github.com/en/actions)                  |
+| Deploy PostgreSQL on Cloud | Railway.app or Supabase | [https://railway.app](https://railway.app) / [https://supabase.com](https://supabase.com) |
+
+
+⚙️ Tools Buat Simulasi & Testing
+
+Postman – Testing API
+
+  * DB Fiddle – Uji SQL online
+
+  * Remix IDE – Smart contract playground
+
+  * Chainlist – Tambah testnet ke wallet
 
 ---
 
@@ -232,6 +294,134 @@ Saya bisa bantu kamu:
 ✔️ Panduan lengkap DeFi dan smart contract
 
 ---
+
+📆 Minggu 1: Dasar Backend & TypeScript
+🎯 Tujuan: Paham REST API, Express.js, TypeScript, dan PostgreSQL basic
+
+📚 Materi Utama:
+✅ JavaScript → TypeScript dasar
+
+✅ REST API dengan Express.js
+
+✅ PostgreSQL + SQL dasar
+
+✅ Postman (testing API)
+
+🎥 Recommended:
+The Net Ninja - Express.js Crash Course
+
+Node.js + PostgreSQL DigitalOcean
+
+🎯 Target Harian:
+
+| Hari   | Fokus                         |
+| ------ | ----------------------------- |
+| Senin  | TypeScript syntax dasar       |
+| Selasa | Setup Express API GET/POST    |
+| Rabu   | Koneksi ke PostgreSQL         |
+| Kamis  | CRUD sederhana `transactions` |
+| Jumat  | Tes pakai Postman             |
+| Sabtu  | Review & buat mini API proyek |
+| Minggu | Istirahat atau revisi         |
+
+📆 Minggu 2: Blockchain & Solidity
+🎯 Tujuan: Paham smart contract dan bagaimana deploy di Remix/Hardhat
+
+📚 Materi Utama:
+✅ Solidity dasar (variabel, fungsi, mapping)
+
+✅ Remix IDE (test smart contract)
+
+✅ Ethers.js dasar
+
+✅ Konsep Wallet, Address, Gas Fee
+
+🎥 Recommended:
+CryptoZombies (gratis & interaktif)
+
+Patrick Collins Solidity + Hardhat
+
+🎯 Target Harian:
+
+| Hari   | Fokus                              |
+| ------ | ---------------------------------- |
+| Senin  | Belajar syntax Solidity            |
+| Selasa | Bikin struct + mapping             |
+| Rabu   | Uji di Remix IDE                   |
+| Kamis  | Deploy lokal pakai Hardhat         |
+| Jumat  | Simulasi transaksi (ETH / USDT)    |
+| Sabtu  | Tulis `SwiftCryptoBridge` contract |
+| Minggu | Review atau improvisasi            |
+
+📆 Minggu 3: Integrasi Backend + Blockchain
+🎯 Tujuan: Hubungkan API ke smart contract & simpan ke database
+
+📚 Materi Utama:
+✅ Gunakan Ethers.js untuk call smart contract
+
+✅ Kirim transaksi ke testnet (Goerli/Polygon Mumbai)
+
+✅ Simpan hasil ke PostgreSQL
+
+✅ Buat endpoint /swift/convert
+
+🎥 Recommended:
+Ethers.js Docs
+
+Alchemy Getting Started (free testnet RPC)
+
+🎯 Target Harian:
+
+| Hari   | Fokus                                    |
+| ------ | ---------------------------------------- |
+| Senin  | Setup testnet wallet (Metamask + faucet) |
+| Selasa | Connect Ethers.js ke smart contract      |
+| Rabu   | Kirim transaksi pakai API                |
+| Kamis  | Simpan hasil transaksi ke DB             |
+| Jumat  | Tambah validasi (cek balance)            |
+| Sabtu  | Testing & debug                          |
+| Minggu | Dokumentasi internal API                 |
+
+📆 Minggu 4: Security, KYC & UI Demo
+🎯 Tujuan: Tambah lapisan keamanan dan siapkan UI demo untuk presentasi MVP
+
+📚 Materi Utama:
+✅ JWT Authentication
+
+✅ Role-based access (admin/user)
+
+✅ Basic KYC check (mocked)
+
+✅ React.js + Tailwind (tampilan transaksi)
+
+🎥 Recommended:
+Auth0 - JWT in Node.js
+
+Tailwind + React Crash Course
+
+🎯 Target Harian:
+
+| Hari   | Fokus                             |
+| ------ | --------------------------------- |
+| Senin  | Tambah JWT auth ke API            |
+| Selasa | Tambah middleware & rate limit    |
+| Rabu   | Mocking `compliance/check`        |
+| Kamis  | Buat UI React tampilkan transaksi |
+| Jumat  | Integrasi frontend ke backend     |
+| Sabtu  | Final test + demo video           |
+| Minggu | Deploy & share repo 💥            |
+
+🎁 Tools Tambahan Buat Belajar:
+
+| Nama       | Link                                                     |
+| ---------- | -------------------------------------------------------- |
+| Postman    | [https://postman.com](https://postman.com)               |
+| DB Fiddle  | [https://www.db-fiddle.com/](https://www.db-fiddle.com/) |
+| Remix IDE  | [https://remix.ethereum.org](https://remix.ethereum.org) |
+| Hardhat    | [https://hardhat.org](https://hardhat.org)               |
+| Prisma ORM | [https://www.prisma.io](https://www.prisma.io)           |
+
+
 
 ## ✅ Gaspol coding squad Indonesia! 🚀💻
 
