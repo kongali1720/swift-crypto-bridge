@@ -1,24 +1,8 @@
-// 📁 backend/services/CryptoConversionService.ts
-class CryptoConversionService {
-    async convertToUSDT(amount: number, currency: string) {
-        const rate = await this.getExchangeRate(currency, 'USDT');
-        const usdtAmount = amount * rate;
-        const gasEstimate = await this.estimateGasFee();
-
-        return {
-            usdtAmount,
-            gasEstimate,
-            totalCost: usdtAmount + gasEstimate
-        };
-    }
-
-    private async getExchangeRate(from: string, to: string): Promise<number> {
-        // Example API mock
-        return 1.08;
-    }
-
-    private async estimateGasFee(): Promise<number> {
-        // Simulate fee (in USDT)
-        return 2.5;
-    }
+export class CryptoConversionService {
+  async convertToUSDT(eurAmount: number): Promise<{ usdt: number, fee: number }> {
+    const rate = 1.08;
+    const fee = 2.35;
+    const usdt = eurAmount * rate;
+    return { usdt, fee };
+  }
 }
