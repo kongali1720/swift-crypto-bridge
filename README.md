@@ -182,6 +182,23 @@ contract SwiftCryptoConverter {
     npm install -D typescript ts-node-dev @types/node @types/express
 ---
 
+✅ Testing
+
+    npx ts-node-dev backend/index.ts
+
+📁 truktur direktori:
+
+  swift-crypto-bridge/
+
+    ├── backend/
+    │   ├── db/
+    │   │   └── pool.ts
+    │   │   └── init_db.sql   ← ✅ 
+    ├── frontend/
+    ├── contracts/
+    ├── README.md
+
+
 🤝 Tech & Compliance Partners
 🏦 SWIFT Alliance Gateway
 
