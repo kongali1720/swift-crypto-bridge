@@ -153,6 +153,35 @@ contract SwiftCryptoConverter {
     npm start
 ---
 
+🚀 STRUKTUR FOLDER
+
+  swift-crypto-bridge/
+  
+    ├── backend/
+    │   ├── services/
+    │   │   ├── SwiftMessageParser.ts
+    │   │   └── CryptoConversionService.ts
+    │   ├── routes/
+    │   │   └── api.ts
+    │   ├── db/
+    │   │   └── pool.ts
+    │   ├── index.ts
+    │   └── .env
+    ├── prisma/
+    │   └── schema.prisma (optional pakai Prisma ORM)
+    ├── package.json
+    └── tsconfig.json
+
+---
+
+### 🛠️ STEP-BY-STEP: Setup Minimal API
+📦 1. Install Dependencies
+                      
+    npm init -y
+    npm install express pg dotenv
+    npm install -D typescript ts-node-dev @types/node @types/express
+---
+
 🤝 Tech & Compliance Partners
 🏦 SWIFT Alliance Gateway
 
